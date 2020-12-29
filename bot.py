@@ -8,23 +8,20 @@ apiSecretAccessToken = "ffJon9xD1C8tKaJfhYozdSRfyqVg1X8X8tp6lF9MPWz3b"
 
 # twtAcc @OffTheSenzu
 myAccId = "3408914651"
-# other twt accs
-accIDs = ["2347264625", "3161785697", "2880135280", "1140429843689070592", "831740071627874304"]
+# other twt accounts
+accIDs = [myAccId, "2347264625", "3161785697", "2880135280", "1140429843689070592", "831740071627874304"]
 
 
 class MyStreamListener(tweepy.StreamListener):
 
     def on_status(self, status):
-        tweet = self.reversify(status.text)
+        tweet = "@" + status.user.screen_name + " " + self.reversify(status.text)
         b = True
-
-        if status.user.screen_name in tweet:
-            b = False
 
         if b:
             print(status.user.screen_name + " tweeted: " + status.text)
             print("bot replied with: " + tweet)
-            api.update_status(status=('@' + status.user.screen_name + " " + tweet), in_reply_to_status_id=status.id)
+            api.update_status(status=tweet, in_reply_to_status_id=status.id)
 
     def on_error(self, status_code):
         if status_code == 420:
