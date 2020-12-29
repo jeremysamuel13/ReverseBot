@@ -1,10 +1,13 @@
 import tweepy
+import upsidedown
 
 apiKey = "kqiTGL4vhvk2t0lH46OdOlXRp"
 apiSecretKey = "enyyDKXNPt3nwwyEEPirq94lGpDSkENdRtmLJiCdHKjF2YHNY5"
 
 apiAccessToken = "1343749282499854338-egzvNHmwrm9i0Y3o73z3L3usvIq7Kb"
 apiSecretAccessToken = "ffJon9xD1C8tKaJfhYozdSRfyqVg1X8X8tp6lF9MPWz3b"
+
+screen_name = "compReverse"
 
 # twtAcc @OffTheSenzu
 myAccId = "3408914651"
@@ -18,6 +21,9 @@ class MyStreamListener(tweepy.StreamListener):
         tweet = "@" + status.user.screen_name + " " + self.reversify(status.text)
         b = True
 
+        if screen_name in tweet:
+            b = False
+
         if b:
             print(status.user.screen_name + " tweeted: " + status.text)
             print("bot replied with: " + tweet)
@@ -30,7 +36,7 @@ class MyStreamListener(tweepy.StreamListener):
 
     @staticmethod
     def reversify(inp):
-        return inp[::-1]
+        return upsidedown.transform(inp)
 
 
 auth = tweepy.OAuthHandler(apiKey, apiSecretKey)
