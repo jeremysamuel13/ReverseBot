@@ -4,4 +4,4 @@ A Twitter Bot that replies to all tweets of a specified person with their origin
 
 Uses Tweepy to interact with Twitter's API using python. 
 
-******* Must inlcude your own keys and tokens *******
+******* Must include your own keys and tokens *******
