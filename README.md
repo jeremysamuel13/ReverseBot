@@ -13,5 +13,5 @@ Insert keys, tokens and account ids to follow in the 'config.json' file. Replace
 
 ## Account IDS
 
-Use https://tweeterid.com/ to convert twitter handles into account ids that the bot can read.
+Use [TweeterID](https://tweeterid.com/) to convert twitter handles into account ids that the bot can read.
 
