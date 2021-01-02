@@ -2,7 +2,8 @@
 
 A Twitter Bot that replies to all tweets of a specified person with their original tweet, but rotated 180 degrees. 
 
-Uses [Tweepy](https://www.tweepy.org/) to interact with Twitter's API using python. 
+- Uses [Tweepy](https://www.tweepy.org/) to interact with Twitter's API using python. 
+- Uses [upsidedown](https://pypi.org/project/upsidedown/) to flip/reverse the text.
 
 ## Config
 
