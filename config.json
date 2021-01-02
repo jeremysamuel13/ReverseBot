@@ -3,7 +3,7 @@
   "apiSecretKey": "key2",
   "apiAccessToken": "token1",
   "apiSecretAccessToken": "token2",
-  "accIDs": "ids",
+  "accIDs": ["ids"],
 
   "_comments":
   [
