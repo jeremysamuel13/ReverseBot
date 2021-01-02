@@ -6,7 +6,8 @@ Uses [Tweepy](https://www.tweepy.org/) to interact with Twitter's API using pyth
 
 ## Config
 
-Insert keys and accounts to follow in the 'config.json' file. Replace all info with the placeholder string.
+Insert keys, tokens and account ids to follow in the 'config.json' file. Replace all info with the placeholder string.
+
 ### __NOTE: Must include your own keys and tokens__
 
 ## Account IDS
