@@ -1,0 +1,16 @@
+{
+  "apiKey": "key1",
+  "apiSecretKey": "key2",
+  "apiAccessToken": "token1",
+  "apiSecretAccessToken": "token2",
+  "accIDs": "ids",
+
+  "_comments":
+  [
+    "********************************************************",
+    "    GET ALL KEYS AND TOKENS FROM TWITTER DEV PANEL.     ",
+    " FOR ACC IDS, USE SOMETHING LIKE https://tweeterid.com/ ",
+    "      TO CONVERT TWITTER ACCOUNT NAMES INTO IDS.         ",
+    "********************************************************"
+  ],
+}
